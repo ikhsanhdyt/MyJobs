@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "390753087950",
+    "firebase_url": "https://fir-test-d2cec.firebaseio.com",
+    "project_id": "fir-test-d2cec",
+    "storage_bucket": "fir-test-d2cec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390753087950:android:e3a574915e24a4bec83b9f",
+        "android_client_info": {
+          "package_name": "com.diavolo.myjobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390753087950-bg004s1m326r2huhipqj1g6vjd3lvdi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiQZbRKNJ6Df5xJA8y8CEuKZBbLgHod5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390753087950-bg004s1m326r2huhipqj1g6vjd3lvdi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
