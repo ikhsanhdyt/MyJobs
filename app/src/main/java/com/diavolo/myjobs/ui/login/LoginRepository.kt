@@ -10,12 +10,12 @@ import javax.inject.Inject
  */
 class LoginRepository
 @Inject constructor(
-
     private val localDataSource: LocalDataSource
 ) : BaseRepositoryImpl(), LoginContract.Repository {
 
-    override suspend fun signIn(idToken: String, email : String): User {
+    override suspend fun signIn(idToken: String, email: String): User {
         localDataSource.setAuthToken(idToken)
+        localDataSource.saveUserData(User(email = email))
         return User(email = email)
     }
 

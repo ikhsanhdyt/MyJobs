@@ -1,6 +1,8 @@
 package com.diavolo.myjobs.di
 
 import com.diavolo.myjobs.base.arch.GenericViewModelFactory
+import com.diavolo.myjobs.ui.home.HomeRepository
+import com.diavolo.myjobs.ui.home.HomeViewModel
 import com.diavolo.myjobs.ui.login.LoginRepository
 import com.diavolo.myjobs.ui.login.LoginViewModel
 import com.diavolo.myjobs.ui.splash.SplashRepository
@@ -35,6 +37,16 @@ object ViewModelModule {
     ): SplashViewModel {
         return GenericViewModelFactory(SplashViewModel(splashRepository)).create(
             SplashViewModel::class.java
+        )
+    }
+
+    @Provides
+    @ActivityScoped
+    fun provideHomeViewModel(
+        homeRepository: HomeRepository
+    ): HomeViewModel {
+        return GenericViewModelFactory(HomeViewModel(homeRepository)).create(
+            HomeViewModel::class.java
         )
     }
 
